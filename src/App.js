@@ -11,6 +11,12 @@ import ReactRef from './components/RactRef/index'
 import ReactReducer from './components/ReactUseReducer/index'
 import ReactCallback from './components/ReactCallback/parent'
 import ReactUseEffect from './components/ReactUseEffect/index'
+import PropsReact from './components/ReactProps/index'
+import PropsReactChildToParent from './components/PropsReactChildToParent/parent'
+import Form from './components/Form/index'
+import Table from './components/Table/index'
+import PureComponent from './components/PureComponent/index'
+import HOC from './components/HOC/index'
 
 function App() {
 
@@ -153,7 +159,7 @@ function App() {
         </div>
 
         <div className='cards'>
-          <h4>SAAA Implementation in React</h4>
+          <h2 className='saas'>SAAA Implementation in React</h2>
           <p>Add a little style!.</p>
         </div>
 
@@ -186,7 +192,40 @@ function App() {
           <ReactUseEffect />
         </div>
 
-  
+        <div className='cards'>
+          <h3>React Props Passing</h3>
+
+          <PropsReact >
+            <p>This is a paragraph inside ParentComponent.</p>
+          </PropsReact>
+        </div>
+
+        <div className='cards'>
+          <h3>React Passing props fron Child to Parent Component</h3>
+          <PropsReactChildToParent />
+        </div>
+
+        <div className='cards'>
+          <h3>React From Component</h3>
+          <Form />
+        </div>
+
+        <div className='cards'>
+          <h3>React Fragment Component</h3>
+          <Table />
+        </div>
+
+        <div className='cards'>
+          <h3>React Pure Component</h3>
+          <PureComponent />
+        </div>
+
+        <div className='cards'>
+          <h3>React HOC Component</h3>
+          <HOC />
+        </div>
+
+
       </div>
     </div>
   );
