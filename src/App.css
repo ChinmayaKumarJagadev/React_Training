@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+#demo{
+  background-color: black;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  background-color: #61dafb;
+  margin: 0 auto;
+  width: 50%;
+}
+.allcards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+}
