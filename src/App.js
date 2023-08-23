@@ -17,6 +17,12 @@ import Form from './components/Form/index'
 import Table from './components/Table/index'
 import PureComponent from './components/PureComponent/index'
 import HOC from './components/HOC/index'
+import Axios from './components/Axios/axios';
+import AxiosPOST from './components/Axios/axiosPost';
+import Object from './components/Hooks/Object';
+import UserReducerComponent from './components/Hooks/UseReducer'
+import UseMemoComponent from './components/Hooks/UseMemo';
+
 
 function App() {
 
@@ -225,6 +231,32 @@ function App() {
           <HOC />
         </div>
 
+        
+        <div className='cards'>
+          <h3>React Axios GET</h3>
+          <Axios />
+        </div>
+
+
+        <div className='cards'>
+          <h3>React Axios POST</h3>
+          <AxiosPOST />
+        </div>
+
+        <div className='cards'>
+          <h3>React HOOK Object</h3>
+          <Object />
+        </div>
+
+        <div className='cards'>
+          <h3>React HOOK Use-Reducer</h3>
+          <UserReducerComponent />
+        </div>
+
+        <div className='cards'>
+          <h3>React HOOK Use-MEMO</h3>
+          <UseMemoComponent />
+        </div>
 
       </div>
     </div>
